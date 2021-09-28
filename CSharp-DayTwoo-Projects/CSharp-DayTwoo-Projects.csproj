@@ -6,4 +6,8 @@
     <RootNamespace>CSharp_DayTwoo_Projects</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Result_ClassLibrary\Result_ClassLibrary.csproj" />
+  </ItemGroup>
+
 </Project>

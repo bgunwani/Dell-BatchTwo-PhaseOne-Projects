@@ -1,0 +1,231 @@
+
+Procedural Oriented Approach:
+
+main() {
+	func1();
+}
+
+func1() {
+	func2();
+}
+
+-------------------------------------------
+
+Object Oriented Programming Approach:
+
+	Key Feature: Data Hiding
+	
+Features:
+
+	1. Data Hiding
+	2. Resuability of Code
+	3. Maintability and Scalability
+	4. Reducing Space Complexity and so on.
+	
+Components of Object Oriented Programming Approach:
+
+	1. Class
+	2. Object
+	3. Encapsulation
+	4. Abstraction
+	5. Inheritance
+	6. Polymorphism
+	
+-----------------------------------------------------------
+
+Class:
+
+	- A user defined data structure data contains data members (fields, properties) and member functions (methods, constructors) and so on.
+	- A class is a encapsulated blue-print for any entity.
+	- Here, Data Members are Variables declared at class level.
+	- And, Member Functions aree methods declared at class level.
+	
+	int number = 10;
+	
+	
+	Student student1 = new Student();
+	
+	// Creating Reference Variable
+	Student student1;
+	// Object of Reference Variable
+	student1 = new Student();
+	
+Object:
+
+	- A representator of a class or instace of a class.
+	- When create an object of a class, memory gets allocated to instance data members but member functions gets memory when they are called.
+	
+-----------------------------------------------------------------
+
+
+Constructor:
+
+	- A special method that has no return type.
+	- The name of the constructor is same as that of the class name.
+	- This is used to initialize the data members of a class.
+	- This is invoked implicitly by compiler at the time of creating an object.
+		
+Note: If you do not assign values to data members then they get assign with default values based upon their data type. Each and Every class gets inherited from an Object class. If you don't any explicit constructor, these default values are assigned with constructor of this object class.
+	
+	
+Types of Constructors:
+
+	1. Default Constructor
+	2. Parameterized Constructor
+	3. Copy Constructor
+	4. Static Constructor
+	5. Private Constructor
+	
+--------------------------------------------------------------
+
+Static Keyword:
+
+	This keyword can be associated with Variable, Constructor, Method or Class.
+	Static Members are not attached with an Object.
+	Rather, They are attached with A class.
+	
+	// Static Data Member
+	static string UniversityName;
+	
+	// Instance Data Member
+	string UniversityName;
+	
+Static Constructor:
+
+A static constructor is used to initialize the static member data or to perform some action only once in the beginning. It is called automatically before the first instance is created or any static members are referenced.
+
+	- A static constructor does not take access modifiers or have parameters.
+	- A class can only one static constructor
+	- A class can have both instance and static construction in a single class.
+	- A static constructor cannot be called directly.	
+	
+-----------------------------------------------------------
+
+Private Constructor:
+
+In some cases we create only static members. So creating an instance of that class become useless. We also use private constructor while implementing Singleton Design pattern where a class can have only one object.
+	
+-------------------------------------------------------------
+
+Inheritance:
+
+	- Helps in Resuablity of Code.
+	- Helps in Reducing time and efforts of a programmar.
+	- Inheritance means, creating sub classes of super class and extend the code based upon the requirement.
+	
+	Super Class -> Sub Class
+	Parent Class -> Child Class
+	Base Class -> Derived Class 
+
+-----------------------------------------------------------------------
+
+Encapsulation: Hiding of Data
+Abstraction: Abstract or Retrieve Relevant Data
+
+Access Modifiers: private, public, protected, internal
+
+private: Default Modifier, Allows a member to be accessed within the class.
+
+public: Allows a member to be accessed from anywhere.
+
+protected: Allows a member to be accessed within the class and its child class
+
+internal: Allows a members to be accessed within the namespace or project.
+	
+-----------------------------------------------------------------------
+
+Components of Object Oriented Programming Approach:
+
+	1. Class
+	2. Object
+	3. Encapsulation
+	4. Abstraction
+	5. Inheritance
+	6. Polymorphism
+	
+------------------------------------------------------------------------
+
+Polymorphism:
+
+	poly means many and morpho means forms.
+	
+	Key Feature: One Interface Many Functions.
+	
+	Example: Human, Visual Studio 2019.
+	
+Types of Polymorphism:
+
+	1. Static Polymorphism / Compile-Time Polymorphism / Early Binding
+	
+		Method Overloading
+		Constructor Overloading
+		
+	2. Dynamic Polymorphism / Run-Time Polymorphism / Late Binding
+	
+		Method Overriding
+		
+-------------------------------------------------------------------
+
+Method Overloading:
+
+	A class can have more than one methods with same name but different method signatures or parameters. There are three different function signatures that helps in Overloading:
+	
+	1. Number of Parameters
+	
+		public int addition(int num1, int num2)
+		public int addition(int num1, int num2, int num3)
+	
+	2. Type of Parameters
+	
+		public int addition(int num1, int num2)
+		public float addition(float num1, float num2)
+	
+	3. Sequence of Parameters
+	
+		public float addition(int num1, float num2)
+		public float addition(float num1, int num2)
+		
+-------------------------------------------------------------------------
+
+Method Overriding:
+
+	The process of re-implmenting the superclass methods into sub classes with the same signature. This cannot be achieved without inheritance.
+	
+	Method Overloading can be implemented with the helps of:
+	
+	abstract classes and Methods
+	Interfaces
+	
+----------------------------------------------------------------------
+
+Abstract Class and Abstract Method:
+
+	- An Abstract class cannot be instantiated.
+	- An abstract class can contain abstract and non-abstract methods.
+	- An abstract method cannot have to implement in abstract class.
+	- An class cannot be inerited from multiple abstract classes.
+	- An abstract method can only be declared in abstract class.
+	- All derived class must implment all the abstract methods in it.
+	
+----------------------------------------------------------------------
+	
+Interface:
+
+	- An interface is an contract for sub classes.
+	- All the undefined methods of an interface by default abstract and public.
+	- All derived class must implment all the abstract methods in it.
+	- An interface can contain abstract and non-abstract methods.
+	- An interface also allows multiple inheritance.
+	
+----------------------------------------------------------------------
+	
+Properties:
+
+	A property is a member of a class which is used to set and get the data from a data fields of a class. To implement properties we use get accessors and set accessors.
+	
+Types of Properties:
+
+	1. Read-Only Property
+	2. Write-Only Property
+	3. Read-Write Property
+	4. Auto Implmented Property
