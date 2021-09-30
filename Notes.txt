@@ -228,4 +228,98 @@ Types of Properties:
 	1. Read-Only Property
 	2. Write-Only Property
 	3. Read-Write Property
-	4. Auto Implmented Property
+	4. Auto Implmented 
+Exception Handling
+File Handling
+Misc Types
+var, annoymous and dynamic types
+tuples type
+propertiesindexers
+
+------------------------------------------------------------
+
+Exception Handling:
+
+When we write and execute our code, there is a possiblity of getting errors.
+Thus, below mentioned types of errors can occurred:
+
+1. Compile-Time Errors
+	a. Misspell the keywords,
+	b. Incorrect syntax
+	c. Incorrect expression (Sementic Errors)
+		c = a + b; (Correct Expression)
+		a + b = c; (Incorrect Expression)
+		
+2. Logical Errors
+	Logical Errors occurred when we do not get the expected output.
+	To check even number:
+	100%2==0 ? "Even" : "Odd"; (Correct)
+	100/2==0 ? "Even" : "Odd"; (Incorrect) - Logical Error
+
+3. Run-Time Errors (Exceptions)
+	Run-Time errors occurred at the time of program execution.
+	Generally , they are occurred due to incorrect inputs, file permissions, connecting with database, missing required resources and so on. Run-Time Errors are also known as Exceptions.
+	
+	TO handle/resolve Run-Time Errors, we use exception handling.
+	Below are the blocks and statements we use in exception handling:
+	
+	1. try: A block in which we write a piece of code, where chances of gettings exceptions are high.
+	2. catch: try block will be followed by catch block or multiple blocks to handle or prompt the run time errors.
+	3. finally
+	4. throw
+	
+------------------------------------------------------------
+
+File Handling:
+
+	Namespace: System.IO
+	
+	Classes: 
+	FileStream, 
+	StreamReader, StreamWriter, 
+	TextWriter, TextReader, 
+	BinaryReader, BinaryWriter
+	
+	FileModes: Create, CreateNew, Open, OpenOrCreate, Append
+	
+------------------------------------------------------------
+
+Serialization and Deserialization:
+
+	C# Objects are written in serialized files. 
+	To read these serialized files you need to deserialize the objects.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+
