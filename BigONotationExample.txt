@@ -1,0 +1,172 @@
+
+// Demonstation: Constant Notation : O(1)
+
+using System;
+
+namespace DataStructuresImplmentation
+{
+    class Calculation
+    {
+        public static void display(int[] numbers)
+        {
+            // O(1) - Constant Notation
+            Console.WriteLine(numbers[0]);
+
+            // O(1) + O(1) 
+            // O(2) - Constant Notation
+            Console.WriteLine(numbers[0]);
+            Console.WriteLine(numbers[0]);
+        }
+    }
+    class BigONotationExample
+    {
+        static void Main(string[] args)
+        {
+            int[] numbers = { 10, 20, 30, 40, 50 };
+            Calculation.display(numbers);
+            Console.ReadKey();
+        }
+    }
+}
+
+/* ************************************************** */
+
+// Demonstation: Constant Notation : O(n)
+
+using System;
+
+namespace DataStructuresImplmentation
+{
+    class Calculation
+    {
+        public static void display(int[] numbers)
+        {
+            // O(n) - Linear Notation
+            for (int i = 0; i < numbers.Length; i++)
+                Console.WriteLine(numbers[i]);
+
+            // O(n) - Linear Notation
+            foreach (var number in numbers)
+                Console.WriteLine(number);
+
+            // O(1) + O(n) + O(1) => O(2) + O(n)
+            // O(n + 2) => O(n) - Linear Notation
+            Console.WriteLine();            
+            foreach (var number in numbers) 
+                Console.WriteLine(number);
+            Console.WriteLine();
+
+            // O(n) + O(n) => O(n + n)
+            // O(n) - Linear Notation 
+            foreach (var number in numbers) // O(n)
+                Console.WriteLine(number);
+            foreach (var number in numbers) // O(n)
+                Console.WriteLine(number);
+        }
+
+        public static void print(int[] numbers, string[] names)
+        {
+            // O(n) + O(m) => O(n + m)
+            // O(n) - Linear Notation
+            foreach (var number in numbers) // O(n)
+                Console.WriteLine(number);
+            foreach (var name in names)     // o(m)
+                Console.WriteLine(name);
+        }
+    }
+    class BigONotationExample
+    {
+        static void Main(string[] args)
+        {
+            int[] numbers = { 10, 20, 30, 40, 50 };
+            Calculation.display(numbers);
+            string[] names = { "King", "Kochhar", "Smith", "Sarah" };
+            Calculation.print(numbers, names);
+            Console.ReadKey();
+        }
+    }
+}
+
+/* ************************************************** */
+
+// Demonstation: Quadratic Notation : O(n^2)
+
+using System;
+
+namespace DataStructuresImplmentation
+{
+    class Calculation
+    {
+        public static void display(int[] numbers)
+        {
+            // O(n^2) - Quadratic Notation
+            foreach (var first in numbers)  // O(n)
+                foreach (var second in numbers) // O(n)
+                    Console.WriteLine(first + " : " + second);
+            
+            // O(n + n^2) => O (n^3)
+            // O(n^2) - Quadratic Notation
+            foreach (var number in numbers) // O(n)
+                Console.WriteLine(number);
+            foreach (var first in numbers)  // O(n)
+                foreach (var second in numbers) // O(n)
+                    Console.WriteLine(first + " : " + second);
+
+        }
+    }
+    class BigONotationExample
+    {
+        static void Main(string[] args)
+        {
+            int[] numbers = { 10, 20, 30, 40, 50 };
+            Calculation.display(numbers);
+            Console.ReadKey();
+        }
+    }
+}
+
+/* ************************************************** */
+
+// Demonstation: Logrithmic Notation : O(log n)
+
+// Examples, half of an input array or we get sample of input 
+
+// Real Time Examples, Binary Search
+
+/* ************************************************** */
+
+// Demonstation: Exponential Notation: O(2^n)
+
+// Example, a recursive calculation: calling itself
+
+using System;
+
+namespace DataStructuresImplmentation
+{
+    class Calculation
+    {
+        public static int fibonaccci(int number)
+        {
+            // 1, 2, 3, 5, 8, 13 and so on.
+            // O(2^n) - Exponential Notation
+            // Used in recursive calculation.
+            if (number <= 1) 
+                return number;
+            return fibonaccci(number - 2) + fibonaccci(number - 1);
+        }
+    }
+    class BigONotationExample
+    {
+        static void Main(string[] args)
+        {
+            int result = Calculation.fibonaccci(5);
+            Console.WriteLine(result);
+            Console.ReadKey();
+        }
+    }
+}
+
+/* ************************************************** */
+
+
+

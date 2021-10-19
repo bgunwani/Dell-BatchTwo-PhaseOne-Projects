@@ -290,6 +290,86 @@ Serialization and Deserialization:
 	To read these serialized files you need to deserialize the objects.
 
 
+-----------------------------------------------------------------
+
+
+Data Structures:
+
+	Data Structure provides difference algorithms or logics to solve a problem. Being a developer we need to find the best and effective algorithms by implmenting trade off between space complexity and time complexity.
+	
+	We trade off between time complexity and space complexity.
+	
+	Delhi to Bangalore (Trade off between Time and Cost):
+		Flight - Expensive but less time
+		Train - Least Expensive but more than expected time
+
+-------------------------------------------------------------------
+
+Big O Notation:
+
+	A mathematical notation that describes the limiting behaviour of a function when the arguments tends towards a particular value or infinity.
+	
+	In other words, we use Big O notation to describe the performance of an alogorithm or to check the time complexity.
+	
+Big O Notations:
+	
+	Constant Notation - O(1)
+	Linear Notation - O(n)
+	Logarithmic Notation - O(log n)
+	Quadratic Notation  - O(n^2)
+	Exponential Notation - O(2^n)
+	
+-------------------------------------------------------------------
+
+ArrayList:
+
+	- A collection class in C#
+	- It works like an Array but provides the facilities such as dynamic resizing, adding and elements from the middle, front and last.
+	- This class is available in System.Collection namespace.
+	- This class consists various properties and Methods to work with.
+
+-------------------------------------------------------------------
+
+Stack:
+
+	- A non-generic collection class.
+	- works in the LIFO(Last IN First Out) principle.
+	
+Applications using Stack:
+
+	- Undo Feature
+	- Build Compliers (E.g. Syntax Checking)
+	- Evaluation Expressions 
+	- Build Navigation (e.g. forward/back)
+	
+Operations using Stack:
+
+push(item)	:	To insert new element in to stack.
+pop() 		: 	To delete existing element from stack.
+peek()		:	To tell you which element is ready to pop.
+isEmpty()	:	To check whether stack is empty or not.
+
+-------------------------------------------------------------------
+
+Queue:
+
+	- A non-generic collection class.
+	- Works in FIFO (First-In-First-Out).
+	
+Applications using Queue:
+
+1. Printers
+2. Operating Systems
+3. Web Servers
+4. Live Support Systems
+
+Operations using Queue:
+
+enqueue	: To insert element into the queue.
+dequeue	: To delete existing element from the queue.
+peek	: To check which element is ready to dequeue.
+isEmpty : To check whether queue is empty or not.
+isFull	: To check whether queue is full or not.
 
 
 
