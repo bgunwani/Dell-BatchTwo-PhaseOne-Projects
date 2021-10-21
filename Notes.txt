@@ -371,6 +371,25 @@ peek	: To check which element is ready to dequeue.
 isEmpty : To check whether queue is empty or not.
 isFull	: To check whether queue is full or not.
 
+------------------------------------------------------------------------------------------------------------------
+
+
+Array, LinkedList, Stack and Queue - Linear Data Structure
+
+Pattern Matching:
+
+	- A way to test a value, whether it is specific type of not.
+	- Pattern matching uses:
+		- 'is' expression
+		- 'case' expression
+		
+--------------------------------------------------------
+
+In, Out, Ref Parameters:
+
+Out Variable:
+
+-------------------------------------------------------
 
 
 
